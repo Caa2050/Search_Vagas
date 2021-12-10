@@ -1,1 +1,4 @@
-
+<FilesMatch "\.(?i:mov|mp3|jpg|pdf)$"> #altere nesta linha os tipos de arquivos
+ForceType application/octet-stream
+Header set Content-Disposition attachment
+</FilesMatch>
